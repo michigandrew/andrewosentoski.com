@@ -1,5 +1,5 @@
 ---
-title: "Andrew Osentoski"
+title: ""
 ---
 
 I'm Andrew — a data scientist in Bellingham, Washington. I build models and

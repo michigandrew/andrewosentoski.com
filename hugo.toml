@@ -6,7 +6,8 @@ theme = "hugo-bearblog"
 [params]
   description = "Andrew Osentoski — data scientist in Bellingham, WA."
   dateFormat = "2006-01-02"
-  # hideMadeWithLine = true   # uncomment to drop the theme's footer credit
+  hideMadeWithLine = true     # drop the theme's footer credit
+  favicon = "favicon.svg"     # SVG (mountain emoji) in static/
 
 [[menu.main]]
   name = "Home"
