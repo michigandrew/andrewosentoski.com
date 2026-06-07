@@ -1,0 +1,22 @@
+baseURL = "https://andrewosentoski.com/"
+locale = "en-us"
+title = "Andrew Osentoski"
+theme = "hugo-bearblog"
+
+[params]
+  description = "Andrew Osentoski — data scientist in Bellingham, WA."
+  dateFormat = "2006-01-02"
+  # hideMadeWithLine = true   # uncomment to drop the theme's footer credit
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 2
+
+[markup.goldmark.renderer]
+  unsafe = true   # allow occasional raw HTML in markdown (e.g. an <img>)
