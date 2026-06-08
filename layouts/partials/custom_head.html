@@ -1,0 +1,85 @@
+<!-- Theme override (loaded after the theme's style.html, so these win).
+     Monospace type, near-black text, green accent links, and dotted rules
+     on a warm cream background. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --font-main: 'Roboto Mono', monospace;
+    --font-secondary: 'Roboto Mono', monospace;
+    --font-scale: 0.9em;
+
+    --background-color: #faf6ef;   /* warm cream */
+    --heading-color: #232333;      /* near-black, slight navy */
+    --text-color: #232333;
+    --link-color: #232333;
+    --visited-color: #232333;
+    --blockquote-color: #232333;
+
+    --main-color: #1a7431;         /* green accent */
+    --code-background-color: #efe7d8;
+    --code-color: #232333;
+    --border-color: #232333;
+  }
+
+  /* cachola's theme has no dark mode — hold the cream look regardless of
+     the OS preference (overrides the theme's dark @media block). */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #faf6ef;
+      --heading-color: #232333;
+      --text-color: #232333;
+      --link-color: #232333;
+      --visited-color: #232333;
+      --blockquote-color: #232333;
+      --code-background-color: #efe7d8;
+      --code-color: #232333;
+    }
+  }
+
+  /* Links: black text with a red underline that inverts on hover. */
+  a {
+    border-bottom: 3px solid var(--main-color);
+  }
+  a:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    text-decoration: none;
+  }
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+  /* The site title is a link too — keep it clean, no red underline. */
+  a.title {
+    border-bottom: none;
+  }
+  a.title:hover {
+    background-color: transparent;
+    color: var(--heading-color);
+  }
+
+  /* Dotted rules framing the header and footer. */
+  header {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px dotted var(--border-color);
+  }
+  footer {
+    margin-top: 40px;
+    padding: 25px 0;
+    border-top: 3px dotted var(--border-color);
+  }
+
+  code {
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+  }
+  .highlight,
+  .code {
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+  }
+</style>
