@@ -2,3 +2,9 @@ public/
 resources/
 .hugo_build.lock
 .DS_Store
+
+# Agent / tooling artifacts
+.claude/
+.playwright-mcp/
+.aider*
+.cursor/
