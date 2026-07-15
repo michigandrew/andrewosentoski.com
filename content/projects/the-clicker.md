@@ -1,7 +1,7 @@
 ---
 title: "the-clicker"
-date: 2026-07-12
-draft: true
+date: 2026-07-14
+draft: false
 summary: "Skip or mute the commercials in streaming sporting events"
 link: "https://github.com/michigandrew/the-clicker"
 ---
