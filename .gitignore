@@ -9,3 +9,11 @@ resources/
 .aider*
 .cursor/
 docs/superpowers/
+
+# Local authoring setup (Prettier, editor) — not used by the CI build
+node_modules/
+package.json
+package-lock.json
+.vscode/
+.prettierrc
+.prettierignore
