@@ -1,5 +1,5 @@
 ---
-title: "the-clicker"
+title: "The Clicker"
 date: 2026-07-14
 draft: false
 summary: "Skip or mute the commercials in streaming sporting events"
